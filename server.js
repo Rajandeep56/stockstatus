@@ -13,6 +13,7 @@ app.get('/',(req,res) => {
 });
 
 app.use("/api/list", stockRoutes);
+app.use("/api/list/:id", stockRoutes);
 
 app.listen(PORT, () =>{
     console.log(`server is running on ${PORT}`)
