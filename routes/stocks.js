@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 require('dotenv').config();
-const { fetchStock, fetchStockbyId } = require("../controllers/stockControllers");
+const { fetchStock, fetchStockbyId, editStockbyId } = require("../controllers/stockControllers");
 
 router.get('/', async (req,res) => {
     try {
@@ -21,6 +21,18 @@ router.get('/:id', async (req, res) => {
     } catch (error) {
         console.error(error);
         res.status(500).json({error: 'Internal Server Error' });
+    }
+});
+
+router.patch('/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const newStockData = req.body;
+        await editStockbyId(id, newStockData);
+        res.status(200).json({message: 'stock item updated'});
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Internal server error' });
     }
 });
 
