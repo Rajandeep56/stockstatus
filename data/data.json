@@ -1,0 +1,29 @@
+{
+    "users": [
+      {
+        "name": "John",
+        "age": 35,
+        "role": "stock_viewer",
+        "permissions": ["view_stock"]
+      },
+      {
+        "name": "Jane",
+        "age": 29,
+        "role": "stock_editor",
+        "permissions": ["view_stock", "edit_stock", "update_stock"]
+      },
+      {
+        "name": "Rajan",
+        "age": 25,
+        "role": "painter",
+        "permissions": ["view_stock", "edit_quantity"]
+      },
+      {
+        "name": "Adam",
+        "age": 45,
+        "role": "admin",
+        "permissions": ["add_user", "remove_user", "set_permissions"]
+      }
+    ]
+  }
+  
