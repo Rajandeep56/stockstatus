@@ -1,0 +1,37 @@
+[    {
+          "id": 1,
+          "username": "john",
+          "password": "password1", 
+          "name": "John",
+          "age": 35,
+          "role": "stock_viewer",
+          "permissions": ["view_stock"]
+      },
+      {
+          "id": 2,
+          "username": "jane",
+          "password": "password2", 
+          "name": "Jane",
+          "age": 29,
+          "role": "stock_editor",
+          "permissions": ["view_stock", "edit_stock", "update_stock"]
+      },
+      {
+          "id": 3,
+          "username": "rajan",
+          "password": "password3", 
+          "name": "Rajan",
+          "age": 25,
+          "role": "painter",
+          "permissions": ["view_stock", "edit_quantity"]
+      },
+      {
+          "id": 4,
+          "username": "adam",
+          "password": "password4",
+          "name": "Adam",
+          "age": 45,
+          "role": "admin",
+          "permissions": ["add_user", "remove_user", "set_permissions"]
+      }
+    ]
