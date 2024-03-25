@@ -6,7 +6,7 @@
   "name": "John",
   "age": 40,
   "role": "stock_viewer",
-  "status": "disable",
+  "status": "enable",
   "permissions": [
    "view_stock"
   ]
